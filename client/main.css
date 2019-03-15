@@ -1,0 +1,146 @@
+/* CSS declarations go here */
+body {
+  font-family: sans-serif;
+  background-color: orange;
+  /* background-image: linear-gradient(to bottom, orange, #ffffff 100%); */
+  background-attachment: fixed;
+ 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  padding: 0;
+  margin: 0;
+ 
+  font-size: 16px;
+}
+ 
+.container {
+  max-width: 700px;
+  margin: 5px auto;
+  min-height: 100%;
+  background: white;
+  padding: 5px;
+}
+ 
+header {
+  background: lightblue;
+  background-image: linear-gradient(to top, lightblue, #e1e5f0 100%);
+  padding: 20px 15px 15px 15px;
+  position: relative;
+  /* border-bottom: solid 5px white; */
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+
+}
+
+.title{
+  font-weight: bolder;
+}
+
+.login-link-text{
+  text-decoration: none;
+}
+
+#login-buttons {
+  display: block;
+  color: black;
+}
+
+
+ 
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+}
+ 
+form {
+  /* background-image: linear-gradient(to top, lightblue, #e1e5f0 100%); */
+  margin-top: 15px;
+  margin-bottom: 5px;
+  position: relative;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+ 
+.new-task input {
+  box-sizing: border-box;
+  padding: 5px 5px;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding-right: 0px;
+  font-size: 1em;
+}
+ 
+.new-task input:focus{
+  outline: 0;
+}
+ 
+ul {
+  margin: 0;
+  padding: 0px;
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+ 
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+}
+ 
+li {
+  position: relative;
+  list-style: none;
+  padding: 15px 25px;
+  border-bottom: grey solid 1px;
+}
+ 
+li .text {
+  margin-left: 10px;
+}
+ 
+li.checked {
+  color: #888;
+}
+ 
+li.checked .text {
+  text-decoration: line-through;
+}
+ 
+li.private {
+  background: rgb(250, 204, 119);
+  background-image: linear-gradient(to top, rgb(255, 200, 99), #e1e5f0 100%);
+  border-color: grey;
+}
+ 
+header .hide-completed {
+  float: right;
+}
+ 
+.toggle-private {
+  margin-left: 5px;
+}
+ 
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+ 
+  .search {
+    width: 150px;
+    clear: both;
+  }
+ 
+  .new-task input {
+    padding-bottom: 10px;
+  }
+}
